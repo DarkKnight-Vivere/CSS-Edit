@@ -26,7 +26,7 @@
         background: var(--background);
         background-position: center; 
         background-size: cover;
-         filter: brightness(1.3) contrast(1.12);
+         filter: brightness(1.3) contrast(0.9);
     }
 
     #app-mount .bg__960e4,
@@ -155,8 +155,10 @@
     #app-mount .wrapper_ef3116.guilds_c48ade { background-color: transparent; }
     
     #app-mount .numberBadge__2b1f5 {
-        background-color: var(--primary1-colour)!important;
-        color: var(--activetext-colour);
+      background-color: rgba(255, 191, 42, 0.25) !important;
+      color: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(255, 191, 42, 0.15);
     }
 
     /*Icon Servers*/
@@ -208,9 +210,21 @@
         #app-mount .containerDefault__29444 { margin-top: 15px; }
         #app-mount .containerDefault_c69b6d { margin-right: 10px; }
 
+        #app-mount .numberBadge__2b1f5,
         #app-mount .mention__3b95d,
         #app-mount .mentionsBadge__933a1 .numberBadge__2b1f5 {
-            background-color: var(--primary1-colour)!important;
+          background-color: rgba(255, 191, 42, 0.25) !important;
+          color: white;
+          border: 1px solid rgba(255, 191, 42, 0.3);
+          border-radius: 50%;
+          box-shadow: 0 0 15px 4px rgba(255, 191, 42, 0.15);
+          backdrop-filter: blur(2px);
+        }
+
+        #app-mount .numberBadge__2b1f5:hover,
+        #app-mount .mention__3b95d:hover {
+          background-color: rgba(255, 191, 42, 0.4) !important;
+          box-shadow: 0 0 20px 6px rgba(255, 191, 42, 0.25);
         }
 
         #app-mount .unreadBar__629e4 {background-color: var(--secondary2-colour);}
