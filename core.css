@@ -7,7 +7,7 @@
      --primary3-colour: rgba(143,26,60,0.6);
      --primary4-colour: rgba(43,0,26,0.4);
  
-     --secondary1-colour: rgba(60,0,40,0.3);
+     --secondary1-colour: rgba(60,0,40,0.6);
      --secondary2-colour: rgba(100,0,80,0.5);
      --secondary3-colour: rgba(40,0,30,0.6);
      --secondary4-colour: rgba(20,0,15,0.3);
@@ -1102,7 +1102,7 @@
 
 /*TopBar*/ 
     #app-mount .title_c38106::before {
-        content: "GGO Kirito v1.4.0 By VaporousCreeper";
+        content: "Custom v1.4.0 By VaporousCreeper";
         color: rgb(255,255,255,0.5);
         font-weight: 500;
 
