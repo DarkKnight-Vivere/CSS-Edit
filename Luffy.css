@@ -378,17 +378,6 @@
         #app-mount .jumpToPresentBar__0f481 {background-color: var(--secondary3-colour);}
         #app-mount .jumpToPresentBar__0f481:hover {background-color: var(--secondary2-colour);}
 
-        #app-mount .message__5126c.cozyMessage__5126c .container_b7e1cb,
-        #app-mount .message__5126c.cozyMessage__5126c .contents_c19a55 {
-          border-radius: 12px;
-          border: 1px solid rgba(255, 191, 42, 0.08);
-          box-shadow: 0 0 15px 3px rgba(255, 191, 42, 0.08); /* <— soft circular glow */
-          transition: box-shadow 0.2s ease;
-        }
-        #app-mount .message__5126c.cozyMessage__5126c:hover .contents_c19a55 {
-          box-shadow: 0 0 20px 5px rgba(255, 191, 42, 0.15);
-        }
-
         #app-mount .message__5126c.compact_c19a55 {padding-left: 0;}
         #app-mount .message__5126c.compact_c19a55 .contents_c19a55 {
             background-color: var(--secondary1-colour);
