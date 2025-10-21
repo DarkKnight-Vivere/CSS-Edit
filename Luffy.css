@@ -378,11 +378,15 @@
         #app-mount .jumpToPresentBar__0f481 {background-color: var(--secondary3-colour);}
         #app-mount .jumpToPresentBar__0f481:hover {background-color: var(--secondary2-colour);}
 
-        #app-mount .message__5126c {padding: 0px 48px 0px 72px;}
         #app-mount .message__5126c.cozyMessage__5126c .container_b7e1cb,
         #app-mount .message__5126c.cozyMessage__5126c .contents_c19a55 {
-            background-color: var(--secondary1-colour);
-            padding: 5px 0px 5px 20px;
+          border-radius: 12px;
+          border: 1px solid rgba(255, 191, 42, 0.08);
+          box-shadow: 0 0 15px 3px rgba(255, 191, 42, 0.08); /* <— soft circular glow */
+          transition: box-shadow 0.2s ease;
+        }
+        #app-mount .message__5126c.cozyMessage__5126c:hover .contents_c19a55 {
+          box-shadow: 0 0 20px 5px rgba(255, 191, 42, 0.15);
         }
 
         #app-mount .message__5126c.compact_c19a55 {padding-left: 0;}
@@ -404,7 +408,12 @@
 
         #app-mount .form_f75fb0 .wrapper__44df5,
         #app-mount .form_f75fb0 .scrollableContainer__74017 {
-            background-color: var(--secondary3-colour);
+          background-color: rgba(10, 5, 25, 0.7);
+          border-radius: 16px;
+          box-shadow: inset 0 0 12px rgba(255, 191, 42, 0.05),
+                      0 0 20px rgba(255, 191, 42, 0.08);
+          border-top: 1px solid rgba(255, 191, 42, 0.1);
+          backdrop-filter: blur(4px);
         }
 
         #app-mount .form_f75fb0 .channelTextArea_f75fb0 { background-color: transparent; }
@@ -902,9 +911,8 @@
         #app-mount .messagesPopoutWrap__45690 {
           background-color: var(--secondary3-colour);
           backdrop-filter: blur(6px) brightness(0.8);
-          border: 1px solid var(--primary3-colour);
-          box-shadow: 0 0 12px rgba(255,191,42,0.25);
-          border-radius: 10px;
+          border-radius: 16px;
+          box-shadow: 0 0 25px 8px rgba(255, 191, 42, 0.1);
     }
 
 
